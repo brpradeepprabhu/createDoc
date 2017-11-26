@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>asdad</title>
+</head>
+<script>
+    function init() {
+        var htmlDocument = '<html>' + document.body.outerHTML + '</html>';
+        var dataUri = 'data:text/html,' + encodeURIComponent(htmlDocument);
+        var a = document.createElement('a');
+        a.href = dataUri;
+        a.download = 'export.doc'
+        document.body.appendChild(a);
+        a.click();
+    }
+</script>
+
+<body>
+    <div>
+        create a doc
+    </div>
+    <div>
+        <b>awesome a doc</b>
+    </div>
+    <div>
+        <h1>new document</h1>
+    </div>
+    <p style="page-break-after: always;">&nbsp;1</p>
+    <p style="page-break-before: always;">&nbsp;2</p>
+    <button onclick='init()'>create</button>
+</body>
+
+</html>

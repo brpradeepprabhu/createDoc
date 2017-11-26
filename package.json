@@ -1,0 +1,23 @@
+{
+  "name": "createdoc",
+  "version": "1.0.0",
+  "description": "create doc based on ui",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "office",
+    "dov"
+  ],
+  "author": "brpradeepprabhu",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "lite-server": "^2.3.0",
+    "officegen": "github:Ziv-Barber/officegen#master",
+    "tempfile": "^2.0.0"
+  }
+}
